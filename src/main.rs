@@ -53,7 +53,6 @@ pub enum Defaults {
 #[serde(rename_all = "camelCase")]
 #[serde(tag = "type")]
 pub enum Channels {
-    #[serde(flatten)]
     Defaults(Defaults),
     Subscribers(Defaults),
 }
